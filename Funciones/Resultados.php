@@ -1,0 +1,58 @@
+<?php
+function lista_A($nom,$doc,$mail){
+    $archivo=fopen("../Archivos/Resultados/Lista_A.csv","a+");
+    while(!feof($archivo)){
+        $linea=fgets($archivo);
+        $datos=explode("|",$linea);
+        $datos[0]=$nom;
+        $datos[1]=$doc;
+        $datos[2]=$mail;
+        $cadena=$nom.'|'.$doc.'|'.$mail."\n";
+        fwrite($archivo,$cadena);
+    break;
+    }
+    fclose($archivo);
+}
+function lista_B($nom,$doc,$mail){
+    $archivo=fopen("../Archivos/Resultados/Lista_B.csv","a+");
+    while(!feof($archivo)){
+        $linea=fgets($archivo);
+        $datos=explode("|",$linea);
+        $datos[0]=$nom;
+        $datos[1]=$doc;
+        $datos[2]=$mail;
+        $cadena=$nom.'|'.$doc.'|'.$mail."\n";
+        fwrite($archivo,$cadena);
+    break;
+    }
+    fclose($archivo);
+}
+function lista_C($nom,$doc,$mail){
+    $archivo=fopen("../Archivos/Resultados/Lista_C.csv","a+");
+    while(!feof($archivo)){
+        $linea=fgets($archivo);
+        $datos=explode("|",$linea);
+        $datos[0]=$nom;
+        $datos[1]=$doc;
+        $datos[2]=$mail;
+        $cadena=$nom.'|'.$doc.'|'.$mail."\n";
+        fwrite($archivo,$cadena);
+    break;
+    }
+    fclose($archivo);
+}
+function lista_D($nom,$doc,$mail){
+    $archivo=fopen("../Archivos/Resultados/Lista_D.csv","a+");
+    while(!feof($archivo)){
+        $linea=fgets($archivo);
+        $datos=explode("|",$linea);
+        $datos[0]=$nom;
+        $datos[1]=$doc;
+        $datos[2]=$mail;
+        $cadena=$nom.'|'.$doc.'|'.$mail."\n";
+        fwrite($archivo,$cadena);
+    break;
+    }
+    fclose($archivo);
+}
+?>

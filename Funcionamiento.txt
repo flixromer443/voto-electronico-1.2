@@ -1,0 +1,15 @@
+1-Para ingresar a Interfaces/Usuario.php mediane "Index.php" tienen que encontrarse rejistrado los
+datos en   "Archivos/Padrones/Padron.csv"   y no se tienen que encontrar en 
+Archivos/Padrones/Registro.csv
+
+2-Una vez registrado se incia sesion,cuando se elije una opcion se ejecuta la accion 
+"Acciones/Votar.php"    la cual me dirige a   "Alertas/Alerta2.php"
+
+3-Estando en Alerta2.php al presionar el boton Finalizar se ejecuta la accion
+"Acciones/Correo.php"    la cual se encarga de enviar mails.
+
+*Nota: 
+    -Los datos que se agregan a  "$_SESSION['usuario']" en "Funciones/Ingreso.php" 
+     y que posteriormente se colocan en el mail provienen de  "Achivos/Padrones/Padron.csv"
+    -los datos de inicio de sesion se guardan mediante   "Funciones/Ingreso.php"
+    -Los datos de    "Archivos/Padrones/Padron.csv"   se guardan mediante   "Funciones/Rellenar.php"
